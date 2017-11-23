@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "New Site -- Post #1"
+date:   2017-11-23 22:02:57 +0000
+categories: jekyll update
+---
+Hello World.
+
+This is my first post on this site. Over the next few months I'm looking to blog a bit more around football, data science, psychology and I might dabble in basketball analytics too.
