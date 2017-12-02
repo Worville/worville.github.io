@@ -25,6 +25,8 @@ Below is the beginning of a breakdown of each of Munger’s heuristics. Each poi
 
 Why is this important? Our thinking can be flawed by underlying biases, so being able to identify and deal with these can lead to an edge in decision making.
 
+***
+
 ## 1) Reward and Punishment Super-response Tendency
 
 **Definition**: We underestimate how important (dis)incentives are in changing ones behaviour.
@@ -32,6 +34,7 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 **Example**: It is in the agent’s best interest to move a player on while he is playing at his peak to get paid part of the fee. It may not be in the player’s interest to move.
 
 **Solution**: There isn’t a one-size-fits-all solution for this heuristic. One solution is to have “skin in the game” or having to “eat your own cooking” where applicable— where you have a share in the downside of something happening and the upside. The agent should get his cut at a later date, which should be adjusted based on the player’s performances. More if the player’s played well, less if the player hasn’t (albeit this is likelier easier said than done…)
+***
 
 ## 2) Liking/Loving Tendency
 
@@ -40,6 +43,7 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 **Example**: Signing a given player because you know them and like them, despite their skill set being unsuitable for the current opening you’re trying to fill.
 
 **Solution**: Gathering feedback from people who are not afraid to disagree with you. Building a team with people who believe this too is extremely important.
+***
 
 ## 3) Disliking/Hating Tendency
 
@@ -48,6 +52,7 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 **Example**: Not signing a player based on the fact he previously played for a rival club.
 
 **Solution**: Again, gathering feedback from people who are not afraid to disagree with you.
+***
 
 ## 4) Doubt-Avoidance Tendency
 
@@ -56,6 +61,7 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 **Example**: Signing a player on transfer deadline day because you need a new [insert position here] before the window shuts.
 
 **Solution**: Remove as much doubt as possible through having a solid process in place to efficiently and accurately assess transfer targets, utilising as much available information as possible. Getting your work done before the window shuts is a sensible way to remove the pressures of time, and using as much information as possible can help remove doubt and uncertainty.
+***
 
 ## 5) Inconsistency-Avoidance Tendency
 
@@ -65,6 +71,11 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 
 **Solution**: The implementation and buy in of a process that focuses on objectivity, critical thinking by all staff members and above all, openness can help remove the adverse effects of this bias. Below is a nice example of Golden State Warriors head coach Steve Kerr reaping the rewards of implementing such an environment:
 
-![kerr_anywhere](/assets/kerr_uren.png)
+<p align="center">
+<img src="/assets/kerr_uren.png" width="400">
+</p>
 
+<p align="center">
 [*Source: The New York Times*](https://www.nytimes.com/2016/04/03/magazine/what-happened-when-venture-capitalists-took-over-the-golden-state-warriors.html?_r=0)
+</p>
+***
