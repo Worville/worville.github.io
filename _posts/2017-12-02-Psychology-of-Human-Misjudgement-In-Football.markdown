@@ -25,7 +25,9 @@ Below is the beginning of a breakdown of each of Munger’s heuristics. Each poi
 
 Why is this important? Our thinking can be flawed by underlying biases, so being able to identify and deal with these can lead to an edge in decision making.
 
-***
+
+Without further ado...
+
 
 ## 1) Reward and Punishment Super-response Tendency
 
