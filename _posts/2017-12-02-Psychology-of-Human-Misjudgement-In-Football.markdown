@@ -13,11 +13,11 @@ One of the chapters within the book is titled _“The Psychology of Human Misjud
 
 The value in such leveraging these is summed up nicely by the book’s author Tren Griffin in the following two quotes:
 
-`Even though you cannot be perfect, you can get marginally better at avoiding mistakes and have an edge in the market over people who do not understand Munger’s tendencies and other aspects of behavioural economics.`
+> Even though you cannot be perfect, you can get marginally better at avoiding mistakes and have an edge in the market over people who do not understand Munger’s tendencies and other aspects of behavioural economics.
 
 and
 
-`If you understand dysfunctions that are caused by behavioural economics phenomena and the other person does not, then you have a potential edge.`
+> If you understand dysfunctions that are caused by behavioural economics phenomena and the other person does not, then you have a potential edge.
 
 It’s true that in many markets [the best way to be smart is to… not be stupid](http://a16z.com/2015/09/12/a16z-podcast-the-best-way-to-be-smart-is-to-not-be-stupid/), football included. I believe that these mental models can be leveraged within football, to give an edge in many areas.
 
@@ -35,7 +35,7 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 
 **Solution**: There isn’t a one-size-fits-all solution for this heuristic. One solution is to have “skin in the game” or having to “eat your own cooking” where applicable— where you have a share in the downside of something happening and the upside. The agent should get his cut at a later date, which should be adjusted based on the player’s performances. More if the player’s played well, less if the player hasn’t (albeit this is likelier easier said than done…)
 
-***
+---
 
 ## 2) Liking/Loving Tendency
 
@@ -45,7 +45,7 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 
 **Solution**: Gathering feedback from people who are not afraid to disagree with you. Building a team with people who believe this too is extremely important.
 
-***
+---
 
 ## 3) Disliking/Hating Tendency
 
@@ -55,7 +55,7 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 
 **Solution**: Again, gathering feedback from people who are not afraid to disagree with you.
 
-***
+---
 
 ## 4) Doubt-Avoidance Tendency
 
@@ -65,7 +65,7 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 
 **Solution**: Remove as much doubt as possible through having a solid process in place to efficiently and accurately assess transfer targets, utilising as much available information as possible. Getting your work done before the window shuts is a sensible way to remove the pressures of time, and using as much information as possible can help remove doubt and uncertainty.
 
-***
+---
 
 ## 5) Inconsistency-Avoidance Tendency
 
@@ -79,8 +79,6 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 <img src="/assets/kerr_uren.png" width="400">
 </p>
 
-<p align="center">
 [*Source: The New York Times*](https://www.nytimes.com/2016/04/03/magazine/what-happened-when-venture-capitalists-took-over-the-golden-state-warriors.html?_r=0)
-</p>
 
 ***
