@@ -6,7 +6,7 @@ permalink: /about/
 
 Hey, I'm Tom Worville.
 
-I'm a `Data Scientist` based London, UK. I currently work for [Opta](http://optasports.com/) and [OptaPro](http://www.optasportspro.com/).
+I'm a `Data Scientist` based in London, UK. I currently work for [Opta](http://optasports.com/) and [OptaPro](http://www.optasportspro.com/).
 
 `#Content` wise I've blogged in the past over at [Medium](https://medium.com/@worville), appeared on the OptaPro [Three At The Back](https://itunes.apple.com/gb/podcast/three-at-the-back/id1143073118?mt=2) podcast and used to host the [Analytics FC podcast](https://itunes.apple.com/gb/podcast/analytics-fc-podcast/id991610009?mt=2).
 
