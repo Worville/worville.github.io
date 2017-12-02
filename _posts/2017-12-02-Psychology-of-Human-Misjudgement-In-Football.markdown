@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Psychology of Human Misjudgement (in Football)"
-date:   2017-11-23 22:02:57 +0000
+date:   2017-12-02 22:02:57 +0000
 categories: jekyll update
 ---
 
@@ -72,5 +72,117 @@ Why is this important? Our thinking can be flawed by underlying biases, so being
 </p>
 
 [*Source: The New York Times*](https://www.nytimes.com/2016/04/03/magazine/what-happened-when-venture-capitalists-took-over-the-golden-state-warriors.html?_r=0)
+
+## 6) Curiosity Tendency
+
+**Definition**: We are curious. Sometimes this can be helpful (this player’s numbers are interesting, I’ll take a deeper look…) and sometimes not so helpful (can I be the first owner to avoid relegation by spending no money? Let’s find out…). As Munger puts it “Curiosity can provide both fun and wisdom, and occasionally trouble.”
+
+**Example**: Thinking that you are the one manager who can tame a player with a lot of potential, but the player has behaviour problems that could disrupt the dressing room.
+
+**Solution**: Think of this through an opportunity cost lens: the player is a high upside, high risk signing. Are there other players who are more of a sure thing? Can we gather more information to move the needle closer to one direction or the other? Have similar gambles of others paid off in the past?
+
+By recognising and analysing the decisions of the many, you can maximise the outcomes of your own decisions and minimising the number of mistakes you make.
+
+## 7) Kantian Fairness Tendency
+
+**Definition**: We will often act irrationally in unfair situations, as we’ve come to expect fairness from others. If we tolerate a little unfairness (e.g. having to hold the door open that little bit longer) we will be repaid in the future (e.g. someone holding the door open for us)
+
+**Example**: Being bitter towards an agent because his client doesn’t want to sign a deal with us, therefore potentially souring the relationship with an important contact.
+
+**Solution**: Again, looking at life through an opportunity costs lens can work well here. Remove yourself from the situation, think through any action before making it and then act appropriately after considering the options. Just because this client will not sign, does not mean others in the future will not either— and by not acting aggressively means you’ve kept a productive relationship together.
+
+## 8) Envy/Jealousy Tendency
+
+**Definition**: We feel envy/get jealous when we see others with things that we want. Envy is a pointless emotion that was necessary when there was plenty of scarcity within the world, and it helped us survive — now it just makes people unhappy.
+
+**Example**: Club X just bought an all action, box-to-box central midfielder. We need our own, and we’ll pay over the odds to get him.
+
+**Solution**: Slow. Down. Even just acknowledging you’re feeling envy can help derail any potentially irrational behaviour. How Munger deals with envy is eloquently summed up in the quote below:
+
+>“Missing out on some opportunity never bothers us. What’s wrong with someone getting a little richer than you? It’s crazy to worry about this.”
+
+It’s ok for other teams to sign good players, it shouldn’t bother you because it’s out of your control (for the most part). [Trust the process instead.]((https://qz.com/890093/trust-the-process-how-three-years-of-losing-on-purpose-turned-the-philadelphia-76ers-into-winners/))
+
+## 9) Reciprocation Tendency
+
+**Definition**: We have a very strong leaning towards returning (dis)favours, regardless of whether the value exchanged is equal or not. We feel uncomfortable if we receive a favour, a feeling that lasts until we can repay it.
+
+**Example**: Receiving a player on loan from a rival team, which makes you feel you must reciprocate by selling them one of your better players in the future if they were to bid for him.
+
+**Solution**: Again, acknowledging the reciprocation tendency is an important step. It’s not a bad thing to have good relationship with other teams, but ensuring that the value exchanged is equal is important.
+
+On the flip-side, you can gain value by trying to prey on the reciprocation tendency of others by offering something small, in return for something disproportionately large in value.
+
+# 10) Influence-from-Mere Association Tendency
+
+**Definition**: We are pattern seekers, and seek help making our decisions from patterns we have detected. This pattern association can very easily resolve a given decision.
+
+**Example**: Not wanting to pursue a given player because the chief scout has said that he’s not good enough for [reasons], although the data shows the opposite to the scout’s [reasons].
+
+**Solution**: Measure your scouts — I highly recommend this [excellent piece by Omar Chaudhuri](http://www.21stclub.com/2017/04/20/rating-our-scouts/) — and you can adjust how you take the information they offer into account in any decision made. Just because the scout is associated with recruiting players because of their background doesn’t make them a good judge of talent.
+
+By seeing how well your scouts predict player development and the successfulness of new signings, you can weight their judgement more in your final decision through data, and less merely from association.
+
+# 11) Simple, Pain-Avoiding Psychological Denial
+
+**Definition**: We hate to hear bad news, or anything inconsistent with our existing opinions. For that reason we distort reality it until it is bearable.
+
+**Example**: Hearing from a reliable source that a player we are scouting closely has a negative personality trait. Instead of taking this information into account, we give reasons why it isn’t a problem or can be “solved”, and push on with pursuing the player anyway.
+
+**Solution**: Note all the available information down, regardless of how minute a detail it is, so you can draw upon it when making a decision. A skill that must be practiced is how to appropriately weight this information into your overall decision. This snippet featuring [Daryl Morey](https://twitter.com/dmorey/) from The Undoing Project shows that for some scouts, this is tough.
+
+<p align="center">
+<img src="/assets/morey.png" width="400">
+</p>
+
+[*Source: The Slate*](http://www.slate.com/articles/arts/books/2016/12/how_daryl_morey_used_behavioral_economics_to_revolutionize_the_art_of_nba.html)
+
+# 12) Excessive Self-regard Tendency
+
+**Definition**: We tend to overestimate our own capabilities.
+
+**Example**: I had a discussion recently with someone who holds a senior position within a category one academy. My question was “Do you ever have conversations with players about what their playing career may look like if they don’t make it to the first team?”
+
+The answer was along the lines of “good luck having that conversation with a young man who has only known football at this club since his early teens”.
+
+That’s a completely justified response, as any seeds of doubt that are planted may hinder the player’s development — but in my eyes it’s a conversation that needs to be had. Preparing for life after playing in an academy is important as there’s always a non-zero chance that a player doesn’t end up playing for the club’s first team.
+
+**Solution**: A young player ideally should know the chances of him making it as a professional, and the support systems and opportunities for further education should be available throughout the time within the academy. If there’s a non-zero chance of you not making it, it’s best to prepare for the worst, just in case.
+
+# 13) Over-Optimism Tendency
+
+**Definition**: We tend to be overly optimistic in many facets of life.
+
+**Example**: Taking low percentage shots from long distance because we’ve taken them before and they’ve ended up as goals.
+
+This is evidently a very specific example — but one we can probably all recall trying at some point if you’ve ever played football.
+
+You line up the 30 yard wonder-strike and then toe poke the ball towards goal, resulting in the shot sailing wide, and you turn around to receive a torrent of abuse from your team mates. They yell “why are you shooting from there?!” but all you are thinking is “…next one’s going in”.
+
+**Solution**: Through appropriate training and education around the notion of “chance quality” it’s possible to remove this erratic behaviour on the pitch. Referring to base rates — for example, how likely a chance from 30 yards is scored — can help change our behaviour over a long period of time.
+
+# 14) Deprival Super-Reaction Tendency (Loss Aversion)
+
+**Definition**: We tend to be too aggressive in seeking to avoid losses, but too conservative when seeking gains.
+
+**Example**: Not selling a player on the team who isn’t productive, as we’ll make a loss on his transfer fee.
+
+**Solution**: Take the [Overnight Test](http://www.nytimes.com/2013/12/09/your-money/overcoming-an-aversion-to-loss.html). Imagine someone sells the player overnight while you’re sleeping and leaves you the money, and the next morning you have to choose whether to buy the player back or keep the money. What do you do?
+
+On most occasions, you’ll keep the money. This simple perspective change can be pretty powerful in dealing with loss aversion.
+
+# 15) Social-Proof Tendency
+
+**Definition**: We tend to view a behaviour as more correct to the degree we see others performing it. For this reason, we tend to follow the herd.
+
+**Example**: Adopting the same scouting process of other clubs because it’s the “done thing”.
+
+**Solution**: Intuitively, if you follow what everyone else in the market is doing you’ll never outperform the market. For that reason, it’s worth trying to think independently — and sometimes go against the market — to find value.
+
+One could argue that AS Roma did this in the summer of 15/16. They signed Mohammed Salah, Edin Dzeko and Stephan El Shaarawy for very modest fees — at a time when each of the player’s stocks were pretty low (there’s definitely a touch of confirmation bias here — I’d love to hear some better examples!)
+
+<p align="center">
+<img src="/assets/roma.png" width="400">
+</p>
 
 ***
