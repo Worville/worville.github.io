@@ -115,7 +115,7 @@ It’s ok for other teams to sign good players, it shouldn’t bother you becaus
 
 On the flip-side, you can gain value by trying to prey on the reciprocation tendency of others by offering something small, in return for something disproportionately large in value.
 
-# 10) Influence-from-Mere Association Tendency
+## 10) Influence-from-Mere Association Tendency
 
 **Definition**: We are pattern seekers, and seek help making our decisions from patterns we have detected. This pattern association can very easily resolve a given decision.
 
@@ -125,7 +125,7 @@ On the flip-side, you can gain value by trying to prey on the reciprocation tend
 
 By seeing how well your scouts predict player development and the successfulness of new signings, you can weight their judgement more in your final decision through data, and less merely from association.
 
-# 11) Simple, Pain-Avoiding Psychological Denial
+## 11) Simple, Pain-Avoiding Psychological Denial
 
 **Definition**: We hate to hear bad news, or anything inconsistent with our existing opinions. For that reason we distort reality it until it is bearable.
 
@@ -139,7 +139,7 @@ By seeing how well your scouts predict player development and the successfulness
 
 [*Source: The Slate*](http://www.slate.com/articles/arts/books/2016/12/how_daryl_morey_used_behavioral_economics_to_revolutionize_the_art_of_nba.html)
 
-# 12) Excessive Self-regard Tendency
+## 12) Excessive Self-regard Tendency
 
 **Definition**: We tend to overestimate our own capabilities.
 
@@ -151,7 +151,7 @@ That’s a completely justified response, as any seeds of doubt that are planted
 
 **Solution**: A young player ideally should know the chances of him making it as a professional, and the support systems and opportunities for further education should be available throughout the time within the academy. If there’s a non-zero chance of you not making it, it’s best to prepare for the worst, just in case.
 
-# 13) Over-Optimism Tendency
+## 13) Over-Optimism Tendency
 
 **Definition**: We tend to be overly optimistic in many facets of life.
 
@@ -163,7 +163,7 @@ You line up the 30 yard wonder-strike and then toe poke the ball towards goal, r
 
 **Solution**: Through appropriate training and education around the notion of “chance quality” it’s possible to remove this erratic behaviour on the pitch. Referring to base rates — for example, how likely a chance from 30 yards is scored — can help change our behaviour over a long period of time.
 
-# 14) Deprival Super-Reaction Tendency (Loss Aversion)
+## 14) Deprival Super-Reaction Tendency (Loss Aversion)
 
 **Definition**: We tend to be too aggressive in seeking to avoid losses, but too conservative when seeking gains.
 
@@ -173,7 +173,7 @@ You line up the 30 yard wonder-strike and then toe poke the ball towards goal, r
 
 On most occasions, you’ll keep the money. This simple perspective change can be pretty powerful in dealing with loss aversion.
 
-# 15) Social-Proof Tendency
+## 15) Social-Proof Tendency
 
 **Definition**: We tend to view a behaviour as more correct to the degree we see others performing it. For this reason, we tend to follow the herd.
 
