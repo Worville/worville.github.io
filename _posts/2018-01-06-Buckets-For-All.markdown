@@ -149,4 +149,8 @@ It works! Now you can repeat the same process for any player, team or game in th
 
 ## Player and Game data dumps
 
-_I'll look to add these to a GitHub gist in the next day or so. Sorry!_
+Player data can be found [here](https://gist.github.com/Worville/0f25d19de4814ca0ed5d15ba706bb901).
+
+Game data can be found [here](https://gist.github.com/Worville/56877c2457066c76c406a8ddb662b552).
+
+Enjoy!
