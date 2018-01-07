@@ -1,3 +1,456 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-23T23:16:34+00:00</updated><id>http://localhost:4000/</id><title type="html">Tom Worville</title><subtitle>Hi, I'm Tom Worville. I'm a Data Scientist based in London, UK.</subtitle><entry><title type="html">New Site – Post #1</title><link href="http://localhost:4000/jekyll/update/2017/11/23/intro.html" rel="alternate" type="text/html" title="New Site -- Post #1" /><published>2017-11-23T22:02:57+00:00</published><updated>2017-11-23T22:02:57+00:00</updated><id>http://localhost:4000/jekyll/update/2017/11/23/intro</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/11/23/intro.html">&lt;p&gt;Hello World.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-07T00:33:36+00:00</updated><id>http://localhost:4000/</id><title type="html">Tom Worville</title><subtitle>Hi, I'm Tom Worville. I'm a Data Scientist based in London, UK.</subtitle><entry><title type="html">Buckets For All</title><link href="http://localhost:4000/jekyll/update/2018/01/04/Buckets-For-All.html" rel="alternate" type="text/html" title="Buckets For All" /><published>2018-01-04T15:00:00+00:00</published><updated>2018-01-04T15:00:00+00:00</updated><id>http://localhost:4000/jekyll/update/2018/01/04/Buckets-For-All</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/01/04/Buckets-For-All.html">&lt;p&gt;&lt;em&gt;This brief tutorial shows how you can use the Hoopsville package to create custom video playlists on NBA.com. If you have any questions or feedback, find me on &lt;a href=&quot;http://www.twitter.com/worville&quot;&gt;Twitter&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As someone who’s trying to learn about basketball, I’m fortunate that there are a lot of #content* out there that I can lean on to get a better understanding about all areas of the sport.&lt;/p&gt;
+
+&lt;p&gt;For example, Zach Lowe’s weekly &lt;a href=&quot;&amp;quot;http://www.espn.co.uk/nba/story/_/id/21961715/zach-lowe-10-things-like-including-lebron-james-kevin-love-nba&amp;quot;&quot;&gt;Ten Things&lt;/a&gt; pieces have taught me a lot, as has his &lt;a href=&quot;&amp;quot;http://www.espn.com/espnradio/podcast/archive/_/id/10528553&amp;quot;&quot;&gt;Lowe Post podcast&lt;/a&gt;. My favourite place to read/watch/learn about basketball though is &lt;a href=&quot;http://cleaningtheglass.com/&quot;&gt;Cleaning The Glass&lt;/a&gt;. It’s a subscription based website, but you get stats, in-depth articles and a discussion forum for a measly $5 a month.&lt;/p&gt;
+
+&lt;p&gt;(&lt;em&gt;*I’m not going to list loads of links in this post, but if you want to learn more about the NBA and find out what to read/watch/listen to and who to follow then you won’t find a more in depth list than the r/NBA “PhD Program” &lt;a href=&quot;https://www.reddit.com/r/nba/comments/76rluz/the_nba_phd_program_year_4/&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;One of the main ways to learn about a sport is to actually watch the games (duh) but to do this you need video. Footage of full games can be easily found online - if you know where to look - but these are usually a few gigabytes in size and not always what you want when focusing on a specific facet of a given player or team’s play.&lt;/p&gt;
+
+&lt;p&gt;YouTube &lt;a href=&quot;https://www.youtube.com/channel/UCEjOSbbaOfgnfRODEEMYlCw&quot;&gt;highlight channels&lt;/a&gt; showcase the made buckets and big moments of every game, but again these are never tailored to a specific player (unless they’ve had a noteworthy game).&lt;/p&gt;
+
+&lt;p&gt;Using my &lt;a href=&quot;https://github.com/worville/hoopsville&quot;&gt;Hoopsville python package&lt;/a&gt; and &lt;a href=&quot;nba.com&quot;&gt;NBA.com&lt;/a&gt; I’m going to show how you can create custom playlists. Don’t worry if you don’t have any Python experience, I’ll post the files you need online (&lt;a href=&quot;#player-and-game-data-dumps&quot;&gt;skip to the files here&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;finding-the-video&quot;&gt;Finding the Video&lt;/h3&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&quot;https://twitter.com/bencfalk&quot;&gt;Ben Falk&lt;/a&gt; (founder of the aforementioned Cleaning The Glass site) I was pointed in the direction of &lt;a href=&quot;http://stats.nba.com/events/?flag=3&amp;amp;CFID=&amp;amp;CFPARAMS=&amp;amp;PlayerID=204001&amp;amp;TeamID=1610612752&amp;amp;GameID=0021700550&amp;amp;ContextMeasure=FGA&amp;amp;Season=2017-18&amp;amp;SeasonType=Regular%20Season&amp;amp;RangeType=0&amp;amp;StartPeriod=1&amp;amp;EndPeriod=10&amp;amp;StartRange=0&amp;amp;EndRange=28800&amp;amp;section=game&amp;amp;sct=plot&quot;&gt;this page&lt;/a&gt; on the NBA.com site, after asking Ben how he finds footage efficiently for his articles.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/nba_playlist_1.png&quot; width=&quot;600&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It’s part of the site that allows you to query any player/team/game and watch the video of their on ball events (think assists, rebounds, field goal attempts, etc.). Quite a powerful tool, which I’m fortunate to have access to a similar sort of thing for &lt;a href=&quot;http://www.optasportspro.com/products/provision/&quot;&gt;football in my day job&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To change the playlist, you just need to change out the separate parts of the following URL:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stats.nba.com/events/?flag=3&amp;amp;CFID=&amp;amp;CFPARAMS=&amp;amp;PlayerID=204001&amp;amp;TeamID=1610612752&amp;amp;GameID=0021700550&amp;amp;ContextMeasure=FGA&amp;amp;Season=2017-18&amp;amp;SeasonType=Regular%20Season&amp;amp;RangeType=0&amp;amp;StartPeriod=1&amp;amp;EndPeriod=10&amp;amp;StartRange=0&amp;amp;EndRange=28800&amp;amp;section=game&amp;amp;sct=plot&quot;&gt;http://stats.nba.com/events/?flag=3&amp;amp;CFID=&amp;amp;CFPARAMS=&amp;amp;PlayerID=204001&amp;amp;TeamID=1610612752&amp;amp;GameID=0021700550&amp;amp;ContextMeasure=FGA&amp;amp;Season=2017-18&amp;amp;SeasonType=Regular%20Season&amp;amp;RangeType=0&amp;amp;StartPeriod=1&amp;amp;EndPeriod=10&amp;amp;StartRange=0&amp;amp;EndRange=28800&amp;amp;section=game&amp;amp;sct=plot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The parameters that can be changed in the URL are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PlayerID - 204001 here is Kristaps Porzingis&lt;/li&gt;
+  &lt;li&gt;TeamID - 1610612752 here is the New York Knicks&lt;/li&gt;
+  &lt;li&gt;GameID - 0021700550 here is the game between the New York Knicks and the San Antonio Spurs&lt;/li&gt;
+  &lt;li&gt;ContextMeasure - FGA here is Field Goal Attempts (i.e. all 2 or 3 point shots)&lt;/li&gt;
+  &lt;li&gt;Season - 2017-18 here is the current 17/18 season&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are a couple more that could be tweaked, but these aren’t relevant right now.&lt;/p&gt;
+
+&lt;h2 id=&quot;pulling-the-data&quot;&gt;Pulling the Data&lt;/h2&gt;
+
+&lt;p&gt;This link is great if you’re really interested in looking at Porzingis’ shot attempts, but pointless if you want to look at Chris Paul’s season high 14 assists against the Brooklyn Nets back in November.&lt;/p&gt;
+
+&lt;p&gt;To get a playlist of Paul’s assists I need his PlayerID and GameID. To grab both of these things, I’ll use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hoopsville&lt;/code&gt; package. First, I’ll get Paul’s PlayerID.&lt;/p&gt;
+
+&lt;p&gt;After installing the &lt;a href=&quot;https://github.com/worville/hoopsville&quot;&gt;Hoopsville&lt;/a&gt; package, fire up iPython and import the package:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;import hoopsville as hv&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can then get a pandas DataFrame of all of the players who’ve played in the league this season by running:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;players = hv.get_players()&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The first few rows and columns of the &lt;code class=&quot;highlighter-rouge&quot;&gt;players&lt;/code&gt; DataFrame looks like this:&lt;/p&gt;
+
+&lt;style&gt;
+.tablelines table, .tablelines td, .tablelines th {
+        border: 0.5px solid grey;
+        }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;players.iloc[0:4, 0:7].set_index('PERSON_ID')&lt;/code&gt;&lt;/p&gt;
+
+&lt;table class=&quot;tablelines&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;PERSON_ID&lt;/th&gt;
+      &lt;th&gt;DISPLAY_LAST_COMMA_FIRST&lt;/th&gt;
+      &lt;th&gt;DISPLAY_FIRST_LAST&lt;/th&gt;
+      &lt;th&gt;ROSTERSTATUS&lt;/th&gt;
+      &lt;th&gt;FROM_YEAR&lt;/th&gt;
+      &lt;th&gt;TO_YEAR&lt;/th&gt;
+      &lt;th&gt;PLAYERCODE&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;203518&lt;/td&gt;
+      &lt;td&gt;Abrines, Alex&lt;/td&gt;
+      &lt;td&gt;Alex Abrines&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2016&lt;/td&gt;
+      &lt;td&gt;2017&lt;/td&gt;
+      &lt;td&gt;alex_abrines&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;203112&lt;/td&gt;
+      &lt;td&gt;Acy, Quincy&lt;/td&gt;
+      &lt;td&gt;Quincy Acy&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2012&lt;/td&gt;
+      &lt;td&gt;2017&lt;/td&gt;
+      &lt;td&gt;quincy_acy&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;203500&lt;/td&gt;
+      &lt;td&gt;Adams, Steven&lt;/td&gt;
+      &lt;td&gt;Steven Adams&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2013&lt;/td&gt;
+      &lt;td&gt;2017&lt;/td&gt;
+      &lt;td&gt;steven_adams&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1628389&lt;/td&gt;
+      &lt;td&gt;Adebayo, Bam&lt;/td&gt;
+      &lt;td&gt;Bam Adebayo&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2017&lt;/td&gt;
+      &lt;td&gt;2017&lt;/td&gt;
+      &lt;td&gt;bam_adebayo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;201167&lt;/td&gt;
+      &lt;td&gt;Afflalo, Arron&lt;/td&gt;
+      &lt;td&gt;Arron Afflalo&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2007&lt;/td&gt;
+      &lt;td&gt;2017&lt;/td&gt;
+      &lt;td&gt;arron_afflalo&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br /&gt;
+I shortened this down so that it’d fit properly on the page, but this is the only information that is needed to continue.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;PLAYERCODE&lt;/code&gt; here looks to be the combination of a player’s first name, an underscore and their last name. In order to get Chris Paul’s data I should only have to filter down the DataFrame just using &lt;code class=&quot;highlighter-rouge&quot;&gt;chris_paul&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;First I’ll store the filtered down DataFrame containing just Paul’s &lt;code class=&quot;highlighter-rouge&quot;&gt;PLAYERCODE&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cp3 = players.loc[players.PLAYERCODE == 'chris_paul']&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Next I’ll take a look at the table, again just taking the first seven columns:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cp3.iloc[:, 0:7].set_index('PERSON_ID')&lt;/code&gt;&lt;/p&gt;
+
+&lt;table class=&quot;tablelines&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;PERSON_ID&lt;/th&gt;
+      &lt;th&gt;DISPLAY_LAST_COMMA_FIRST&lt;/th&gt;
+      &lt;th&gt;DISPLAY_FIRST_LAST&lt;/th&gt;
+      &lt;th&gt;ROSTERSTATUS&lt;/th&gt;
+      &lt;th&gt;FROM_YEAR&lt;/th&gt;
+      &lt;th&gt;TO_YEAR&lt;/th&gt;
+      &lt;th&gt;PLAYERCODE&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;101108&lt;/td&gt;
+      &lt;td&gt;Paul, Chris&lt;/td&gt;
+      &lt;td&gt;Chris Paul&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2005&lt;/td&gt;
+      &lt;td&gt;2017&lt;/td&gt;
+      &lt;td&gt;chris_paul&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Perfect, Paul’s &lt;code class=&quot;highlighter-rouge&quot;&gt;PERSON_ID&lt;/code&gt; is 101108. Now all that’s needed is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Game_ID&lt;/code&gt; for the game against the Nets.&lt;/p&gt;
+
+&lt;p&gt;Using the &lt;code class=&quot;highlighter-rouge&quot;&gt;get_teams()&lt;/code&gt; function in &lt;code class=&quot;highlighter-rouge&quot;&gt;Hoopsville&lt;/code&gt; I can quickly look up what the Houston Rockets &lt;code class=&quot;highlighter-rouge&quot;&gt;Team_ID&lt;/code&gt; is:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hv.get_teams().set_index('TEAM_ID').head(10)&lt;/code&gt;&lt;/p&gt;
+
+&lt;table class=&quot;tablelines&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;TEAM_ID&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;ABBREVIATION&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612737&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ATL&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612738&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;BOS&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612739&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;CLE&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612740&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NOP&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612741&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;CHI&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612742&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;DAL&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612743&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;DEN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612744&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;GSW&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612745&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;HOU&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612746&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;LAC&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br /&gt;
+The &lt;code class=&quot;highlighter-rouge&quot;&gt;Team_ID&lt;/code&gt; for Rockets is 1610612745. I can then plug this into the &lt;code class=&quot;highlighter-rouge&quot;&gt;get_team_games&lt;/code&gt; function to get data on their games this season:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;HOU = hv.get_team_games(tid=1610612745)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, I’ll use a shortened version of the DataFrame:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;HOU.iloc[17:18,0:4].set_index('Team_ID')&lt;/code&gt;&lt;/p&gt;
+
+&lt;table class=&quot;tablelines&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Team_ID&lt;/th&gt;
+      &lt;th&gt;Game_ID&lt;/th&gt;
+      &lt;th&gt;GAME_DATE&lt;/th&gt;
+      &lt;th&gt;MATCHUP&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1610612745&lt;/td&gt;
+      &lt;td&gt;0021700294&lt;/td&gt;
+      &lt;td&gt;NOV 27, 2017&lt;/td&gt;
+      &lt;td&gt;HOU vs. BKN&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-the-video&quot;&gt;Getting The Video&lt;/h2&gt;
+
+&lt;p&gt;Now that I have Paul’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Player_ID&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Game_ID&lt;/code&gt; I can plug them into the URL used previously to get his assists vs the Nets. Note I also changed the &lt;code class=&quot;highlighter-rouge&quot;&gt;ContextMeasure&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;AST&lt;/code&gt; to just get the footage on his assists:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stats.nba.com/events/?flag=3&amp;amp;CFID=&amp;amp;CFPARAMS=&amp;amp;PlayerID=101108&amp;amp;TeamID=1610612745&amp;amp;GameID=0021700294&amp;amp;ContextMeasure=AST&amp;amp;Season=2017-18&amp;amp;SeasonType=Regular%20Season&amp;amp;RangeType=0&amp;amp;StartPeriod=1&amp;amp;EndPeriod=10&amp;amp;StartRange=0&amp;amp;EndRange=28800&amp;amp;section=game&amp;amp;sct=plot&quot;&gt;http://stats.nba.com/events/?flag=3&amp;amp;CFID=&amp;amp;CFPARAMS=&amp;amp;PlayerID=101108&amp;amp;TeamID=1610612745&amp;amp;GameID=0021700294&amp;amp;ContextMeasure=AST&amp;amp;Season=2017-18&amp;amp;SeasonType=Regular%20Season&amp;amp;RangeType=0&amp;amp;StartPeriod=1&amp;amp;EndPeriod=10&amp;amp;StartRange=0&amp;amp;EndRange=28800&amp;amp;section=game&amp;amp;sct=plot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/nba_playlist_2.png&quot; width=&quot;600&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It works! Now you can repeat the same process for any player, team or game in the past few seasons.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;player-and-game-data-dumps&quot;&gt;Player and Game data dumps&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;I’ll look to add these to a GitHub gist in the next day or so. Sorry!&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">This brief tutorial shows how you can use the Hoopsville package to create custom video playlists on NBA.com. If you have any questions or feedback, find me on Twitter.</summary></entry><entry><title type="html">The Psychology of Human Misjudgement (in Football)</title><link href="http://localhost:4000/jekyll/update/2017/12/02/Psychology-of-Human-Misjudgement-In-Football.html" rel="alternate" type="text/html" title="The Psychology of Human Misjudgement (in Football)" /><published>2017-12-02T22:02:57+00:00</published><updated>2017-12-02T22:02:57+00:00</updated><id>http://localhost:4000/jekyll/update/2017/12/02/Psychology-of-Human-Misjudgement-In-Football</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/12/02/Psychology-of-Human-Misjudgement-In-Football.html">&lt;p&gt;Earlier this year I read an excellent book called &lt;a href=&quot;https://www.amazon.co.uk/Charlie-Munger-Complete-Investor-Publishing/dp/023117098X&quot;&gt;“Charlie Munger: The Complete Investor”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The book focuses on &lt;a href=&quot;https://en.wikipedia.org/wiki/Charlie_Munger&quot;&gt;Charlie Munger&lt;/a&gt;, the vice chairman of Berkshire Hathaway — the American conglomerate company — and his approach to investing. I read the book with the mindset that there are likely parallels between the worlds of investing within both the asset management and football industries, and I was right.&lt;/p&gt;
+
+&lt;p&gt;One of the chapters within the book is titled &lt;em&gt;“The Psychology of Human Misjudgement”&lt;/em&gt;. It details 25 heuristics and mental models that Munger either attempts to utilise, or avoid, in all of the decisions he makes.&lt;/p&gt;
+
+&lt;p&gt;The value in such leveraging these is summed up nicely by the book’s author Tren Griffin in the following two quotes:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Even though you cannot be perfect, you can get marginally better at avoiding mistakes and have an edge in the market over people who do not understand Munger’s tendencies and other aspects of behavioural economics.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you understand dysfunctions that are caused by behavioural economics phenomena and the other person does not, then you have a potential edge.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s true that in many markets &lt;a href=&quot;http://a16z.com/2015/09/12/a16z-podcast-the-best-way-to-be-smart-is-to-not-be-stupid/&quot;&gt;the best way to be smart is to… not be stupid&lt;/a&gt;, football included. I believe that these mental models can be leveraged within football, to give an edge in many areas.&lt;/p&gt;
+
+&lt;p&gt;Below is the beginning of a breakdown of each of Munger’s heuristics. Each point contains a &lt;strong&gt;definition&lt;/strong&gt; of what the heuristic is, a football-based &lt;strong&gt;example&lt;/strong&gt; and finally a potential &lt;strong&gt;solution&lt;/strong&gt; to overcoming the heuristic.&lt;/p&gt;
+
+&lt;p&gt;Why is this important? Our thinking can be flawed by underlying biases, so being able to identify and deal with these can lead to an edge in decision making.&lt;/p&gt;
+
+&lt;p&gt;Without further ado…&lt;/p&gt;
+
+&lt;h2 id=&quot;1-reward-and-punishment-super-response-tendency&quot;&gt;1) Reward and Punishment Super-response Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We underestimate how important (dis)incentives are in changing ones behaviour.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: It is in the agent’s best interest to move a player on while he is playing at his peak to get paid part of the fee. It may not be in the player’s interest to move.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: There isn’t a one-size-fits-all solution for this heuristic. One solution is to have “skin in the game” or having to “eat your own cooking” where applicable— where you have a share in the downside of something happening and the upside. The agent should get his cut at a later date, which should be adjusted based on the player’s performances. More if the player’s played well, less if the player hasn’t (albeit this is likelier easier said than done…)&lt;/p&gt;
+
+&lt;h2 id=&quot;2-likingloving-tendency&quot;&gt;2) Liking/Loving Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We tend to ignore the faults of people we like/love.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Signing a given player because you know them and like them, despite their skill set being unsuitable for the current opening you’re trying to fill.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Gathering feedback from people who are not afraid to disagree with you. Building a team with people who believe this too is extremely important.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-dislikinghating-tendency&quot;&gt;3) Disliking/Hating Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We tend to overstate the faults of people we dislike/hate for irrational reasons.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Not signing a player based on the fact he previously played for a rival club.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Again, gathering feedback from people who are not afraid to disagree with you.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-doubt-avoidance-tendency&quot;&gt;4) Doubt-Avoidance Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We try to remove doubt when making a decision we are unsure of by making the decision quickly, and often without enough information.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Signing a player on transfer deadline day because you need a new [insert position here] before the window shuts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Remove as much doubt as possible through having a solid process in place to efficiently and accurately assess transfer targets, utilising as much available information as possible. Getting your work done before the window shuts is a sensible way to remove the pressures of time, and using as much information as possible can help remove doubt and uncertainty.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-inconsistency-avoidance-tendency&quot;&gt;5) Inconsistency-Avoidance Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We are habitual, we have a reluctance to change. For this reason people are slow to change their beliefs about a given topic, even if it’s proven false.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Continuing to pick a player, even when his underlying data shows that he is performing poorly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: The implementation and buy in of a process that focuses on objectivity, critical thinking by all staff members and above all, openness can help remove the adverse effects of this bias. Below is a nice example of Golden State Warriors head coach Steve Kerr reaping the rewards of implementing such an environment:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/kerr_uren.png&quot; width=&quot;400&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.nytimes.com/2016/04/03/magazine/what-happened-when-venture-capitalists-took-over-the-golden-state-warriors.html?_r=0&quot;&gt;&lt;em&gt;Source: The New York Times&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-curiosity-tendency&quot;&gt;6) Curiosity Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We are curious. Sometimes this can be helpful (this player’s numbers are interesting, I’ll take a deeper look…) and sometimes not so helpful (can I be the first owner to avoid relegation by spending no money? Let’s find out…). As Munger puts it “Curiosity can provide both fun and wisdom, and occasionally trouble.”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Thinking that you are the one manager who can tame a player with a lot of potential, but the player has behaviour problems that could disrupt the dressing room.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Think of this through an opportunity cost lens: the player is a high upside, high risk signing. Are there other players who are more of a sure thing? Can we gather more information to move the needle closer to one direction or the other? Have similar gambles of others paid off in the past?&lt;/p&gt;
+
+&lt;p&gt;By recognising and analysing the decisions of the many, you can maximise the outcomes of your own decisions and minimising the number of mistakes you make.&lt;/p&gt;
+
+&lt;h2 id=&quot;7-kantian-fairness-tendency&quot;&gt;7) Kantian Fairness Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We will often act irrationally in unfair situations, as we’ve come to expect fairness from others. If we tolerate a little unfairness (e.g. having to hold the door open that little bit longer) we will be repaid in the future (e.g. someone holding the door open for us)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Being bitter towards an agent because his client doesn’t want to sign a deal with us, therefore potentially souring the relationship with an important contact.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Again, looking at life through an opportunity costs lens can work well here. Remove yourself from the situation, think through any action before making it and then act appropriately after considering the options. Just because this client will not sign, does not mean others in the future will not either— and by not acting aggressively means you’ve kept a productive relationship together.&lt;/p&gt;
+
+&lt;h2 id=&quot;8-envyjealousy-tendency&quot;&gt;8) Envy/Jealousy Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We feel envy/get jealous when we see others with things that we want. Envy is a pointless emotion that was necessary when there was plenty of scarcity within the world, and it helped us survive — now it just makes people unhappy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Club X just bought an all action, box-to-box central midfielder. We need our own, and we’ll pay over the odds to get him.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Slow. Down. Even just acknowledging you’re feeling envy can help derail any potentially irrational behaviour. How Munger deals with envy is eloquently summed up in the quote below:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Missing out on some opportunity never bothers us. What’s wrong with someone getting a little richer than you? It’s crazy to worry about this.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s ok for other teams to sign good players, it shouldn’t bother you because it’s out of your control (for the most part). &lt;a href=&quot;(https://qz.com/890093/trust-the-process-how-three-years-of-losing-on-purpose-turned-the-philadelphia-76ers-into-winners/)&quot;&gt;Trust the process instead.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;9-reciprocation-tendency&quot;&gt;9) Reciprocation Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We have a very strong leaning towards returning (dis)favours, regardless of whether the value exchanged is equal or not. We feel uncomfortable if we receive a favour, a feeling that lasts until we can repay it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Receiving a player on loan from a rival team, which makes you feel you must reciprocate by selling them one of your better players in the future if they were to bid for him.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Again, acknowledging the reciprocation tendency is an important step. It’s not a bad thing to have good relationship with other teams, but ensuring that the value exchanged is equal is important.&lt;/p&gt;
+
+&lt;p&gt;On the flip-side, you can gain value by trying to prey on the reciprocation tendency of others by offering something small, in return for something disproportionately large in value.&lt;/p&gt;
+
+&lt;h2 id=&quot;10-influence-from-mere-association-tendency&quot;&gt;10) Influence-from-Mere Association Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We are pattern seekers, and seek help making our decisions from patterns we have detected. This pattern association can very easily resolve a given decision.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Not wanting to pursue a given player because the chief scout has said that he’s not good enough for [reasons], although the data shows the opposite to the scout’s [reasons].&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Measure your scouts — I highly recommend this &lt;a href=&quot;http://www.21stclub.com/2017/04/20/rating-our-scouts/&quot;&gt;excellent piece by Omar Chaudhuri&lt;/a&gt; — and you can adjust how you take the information they offer into account in any decision made. Just because the scout is associated with recruiting players because of their background doesn’t make them a good judge of talent.&lt;/p&gt;
+
+&lt;p&gt;By seeing how well your scouts predict player development and the successfulness of new signings, you can weight their judgement more in your final decision through data, and less merely from association.&lt;/p&gt;
+
+&lt;h2 id=&quot;11-simple-pain-avoiding-psychological-denial&quot;&gt;11) Simple, Pain-Avoiding Psychological Denial&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We hate to hear bad news, or anything inconsistent with our existing opinions. For that reason we distort reality it until it is bearable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Hearing from a reliable source that a player we are scouting closely has a negative personality trait. Instead of taking this information into account, we give reasons why it isn’t a problem or can be “solved”, and push on with pursuing the player anyway.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Note all the available information down, regardless of how minute a detail it is, so you can draw upon it when making a decision. A skill that must be practiced is how to appropriately weight this information into your overall decision. This snippet featuring &lt;a href=&quot;https://twitter.com/dmorey/&quot;&gt;Daryl Morey&lt;/a&gt; from The Undoing Project shows that for some scouts, this is tough.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/morey.png&quot; width=&quot;400&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.slate.com/articles/arts/books/2016/12/how_daryl_morey_used_behavioral_economics_to_revolutionize_the_art_of_nba.html&quot;&gt;&lt;em&gt;Source: The Slate&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;12-excessive-self-regard-tendency&quot;&gt;12) Excessive Self-regard Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We tend to overestimate our own capabilities.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: I had a discussion recently with someone who holds a senior position within a category one academy. My question was “Do you ever have conversations with players about what their playing career may look like if they don’t make it to the first team?”&lt;/p&gt;
+
+&lt;p&gt;The answer was along the lines of “good luck having that conversation with a young man who has only known football at this club since his early teens”.&lt;/p&gt;
+
+&lt;p&gt;That’s a completely justified response, as any seeds of doubt that are planted may hinder the player’s development — but in my eyes it’s a conversation that needs to be had. Preparing for life after playing in an academy is important as there’s always a non-zero chance that a player doesn’t end up playing for the club’s first team.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: A young player ideally should know the chances of him making it as a professional, and the support systems and opportunities for further education should be available throughout the time within the academy. If there’s a non-zero chance of you not making it, it’s best to prepare for the worst, just in case.&lt;/p&gt;
+
+&lt;h2 id=&quot;13-over-optimism-tendency&quot;&gt;13) Over-Optimism Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We tend to be overly optimistic in many facets of life.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Taking low percentage shots from long distance because we’ve taken them before and they’ve ended up as goals.&lt;/p&gt;
+
+&lt;p&gt;This is evidently a very specific example — but one we can probably all recall trying at some point if you’ve ever played football.&lt;/p&gt;
+
+&lt;p&gt;You line up the 30 yard wonder-strike and then toe poke the ball towards goal, resulting in the shot sailing wide, and you turn around to receive a torrent of abuse from your team mates. They yell “why are you shooting from there?!” but all you are thinking is “…next one’s going in”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Through appropriate training and education around the notion of “chance quality” it’s possible to remove this erratic behaviour on the pitch. Referring to base rates — for example, how likely a chance from 30 yards is scored — can help change our behaviour over a long period of time.&lt;/p&gt;
+
+&lt;h2 id=&quot;14-deprival-super-reaction-tendency-loss-aversion&quot;&gt;14) Deprival Super-Reaction Tendency (Loss Aversion)&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We tend to be too aggressive in seeking to avoid losses, but too conservative when seeking gains.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Not selling a player on the team who isn’t productive, as we’ll make a loss on his transfer fee.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Take the &lt;a href=&quot;http://www.nytimes.com/2013/12/09/your-money/overcoming-an-aversion-to-loss.html&quot;&gt;Overnight Test&lt;/a&gt;. Imagine someone sells the player overnight while you’re sleeping and leaves you the money, and the next morning you have to choose whether to buy the player back or keep the money. What do you do?&lt;/p&gt;
+
+&lt;p&gt;On most occasions, you’ll keep the money. This simple perspective change can be pretty powerful in dealing with loss aversion.&lt;/p&gt;
+
+&lt;h2 id=&quot;15-social-proof-tendency&quot;&gt;15) Social-Proof Tendency&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: We tend to view a behaviour as more correct to the degree we see others performing it. For this reason, we tend to follow the herd.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Adopting the same scouting process of other clubs because it’s the “done thing”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Intuitively, if you follow what everyone else in the market is doing you’ll never outperform the market. For that reason, it’s worth trying to think independently — and sometimes go against the market — to find value.&lt;/p&gt;
+
+&lt;p&gt;One could argue that AS Roma did this in the summer of 15/16. They signed Mohammed Salah, Edin Dzeko and Stephan El Shaarawy for very modest fees — at a time when each of the player’s stocks were pretty low (there’s definitely a touch of confirmation bias here — I’d love to hear some better examples!)&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/roma.png&quot; width=&quot;400&quot; /&gt;
+&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name></name></author><summary type="html">Earlier this year I read an excellent book called “Charlie Munger: The Complete Investor”.</summary></entry><entry><title type="html">New Site – Post #1</title><link href="http://localhost:4000/jekyll/update/2017/11/23/intro.html" rel="alternate" type="text/html" title="New Site -- Post #1" /><published>2017-11-23T22:02:57+00:00</published><updated>2017-11-23T22:02:57+00:00</updated><id>http://localhost:4000/jekyll/update/2017/11/23/intro</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/11/23/intro.html">&lt;p&gt;Hello World.&lt;/p&gt;
 
 &lt;p&gt;This is my first post on this site. Over the next few months I’m looking to blog a bit more around football, data science, psychology and I might dabble in basketball analytics too.&lt;/p&gt;</content><author><name></name></author><summary type="html">Hello World.</summary></entry></feed>
