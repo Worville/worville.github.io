@@ -9,7 +9,7 @@ _This brief tutorial shows how you can use the Hoopsville package to create cust
 
 As someone who's trying to learn about basketball, I'm fortunate that there are a lot of #content* out there that I can lean on to get a better understanding about all areas of the sport.
 
-For example, Zach Lowe's weekly [Ten Things]("http://www.espn.co.uk/nba/story/_/id/21961715/zach-lowe-10-things-like-including-lebron-james-kevin-love-nba") pieces have taught me a lot, as has his [Lowe Post podcast]("http://www.espn.com/espnradio/podcast/archive/_/id/10528553"). My favourite place to read/watch/learn about basketball though is [Cleaning The Glass](http://cleaningtheglass.com/). It's a subscription based website, but you get stats, in-depth articles and a discussion forum for a measly $5 a month.
+For example, Zach Lowe's weekly [Ten Things](http://www.espn.co.uk/nba/story/_/id/21961715/zach-lowe-10-things-like-including-lebron-james-kevin-love-nba) pieces have taught me a lot, as has his [Lowe Post podcast](http://www.espn.com/espnradio/podcast/archive/_/id/10528553). My favourite place to read/watch/learn about basketball though is [Cleaning The Glass](http://cleaningtheglass.com/). It's a subscription based website, but you get stats, in-depth articles and a discussion forum for a measly $5 a month.
 
 (_*I'm not going to list loads of links in this post, but if you want to learn more about the NBA and find out what to read/watch/listen to and who to follow then you won't find a more in depth list than the r/NBA "PhD Program" [here](https://www.reddit.com/r/nba/comments/76rluz/the_nba_phd_program_year_4/)._)
 
