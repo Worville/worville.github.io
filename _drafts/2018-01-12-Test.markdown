@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Test"
+date:   2018-01-12 15:00:00 +0000
+categories: jekyll update
+---
+
+<head>
+<script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
+</head>
+
+testing testing 1..2...3...
+
+<video src="/assets/cp3_assist.mp4" width="640" height="360" controls preload></video>
