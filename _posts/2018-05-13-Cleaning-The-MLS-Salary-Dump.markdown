@@ -17,7 +17,7 @@ Feel free to re-run the data yourself (you'll need to ensure that you have the C
 
 This script could definitely be improved with functions and I didn't really go back to re-write any of the earlier parts of this script - but hopefully it contains a few useful snippets you can take away and use elsewhere!
 
-If you don't want to run through the code, and just want to get the data to play with you can find it here: https://t.co/7py34jC5uL
+If you don't want to run through the code, and just want to get the data to play with you can find it [here](https://t.co/7py34jC5uL).
 
 Any questions/thoughts, find me on twitter [@Worville](http://www.twitter.com/Worville).
 
