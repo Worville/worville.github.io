@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Encode 2019 Recap"
+title:  "What I decoded from Encode (a data visualisation conference)"
 date:   2019-10-04 00:00:00 +0000
 categories: jekyll update
 ---
