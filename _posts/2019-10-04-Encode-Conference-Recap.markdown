@@ -7,7 +7,7 @@ categories: jekyll update
 
 September saw the inaugural [Encode](https://encode.info/) conference take place at Oval Space in East London. As someone who considers part of their job to be a data visualisation designer across multiple _StatsPerform_ brands, attending seemed a no-brainer.
 
-A venue more synonymous with chemical creativity (Oval Space is ~an evolving multi-use arts and events organization~ a night club, for the uninitiated) rather than the data visualisation kind, roughly 400 people were in attendance to hear speakers cover topics across information design, journalism and education.
+A venue more synonymous with chemical creativity (Oval Space is ~~an evolving multi-use arts and events organization~~ a night club, for the uninitiated) rather than the data visualisation kind, roughly 400 people were in attendance to hear speakers cover topics across information design, journalism and education.
 
 In this short blog, I'll look to recap some of the key themes from the day, and some learnings I'll be applying going forwards.
 
