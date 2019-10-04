@@ -71,9 +71,9 @@ What good is a product if, in a key part of the decision-making process, it's no
 
 When you think of data visualisation, more often than not people think about fancy bar charts or interactive experiences that showcase a dataset in an engaging way. Recently, though, there's been growth in the creation of more sound-based and physical data visualisation. Andy Kirk pointed this out, among 29 other trends, in his talk _Data Visualisation: State of the Union 2019+._
 
-For example, Signal Noise released a great project back in 2018 in a unique collaboration between Siemens, Bayern__Munich and The Economist. Signal Noise [visualised crowd noise data](https://twitter.com/signalnoise_/status/1035455274642010112?lang=en) from Bayern's Allianz Arena, and showed how fans reacted to different players being on the ball, areas of the stands that were most vocal, and various other angles.
+For example, _Signal Noise_ released a great project back in 2018 in a unique collaboration between _Siemens_, _Bayern Munich_ and _The Economist_. _Signal Noise_ [visualised crowd noise data](https://twitter.com/signalnoise_/status/1035455274642010112?lang=en) from Bayern's Allianz Arena, and showed how fans reacted to different players being on the ball, areas of the stands that were most vocal, and various other angles.
 
-While this is a very bespoke dataset, it shows how sound is a largely untapped form of data, which can be visualised. On the flipside (taking data and turning it into sound) we can get pieces like [this](https://www.ft.com/content/80269930-40c3-11e9-b896-fe36ec32aece) from the FT, in which the yield curve of a Government bond can be turned into music.
+While this is a very bespoke dataset, it shows how sound is a largely untapped form of data, which can be visualised. On the flipside (taking data and turning it into sound) we can get pieces like [this](https://www.ft.com/content/80269930-40c3-11e9-b896-fe36ec32aece) from the _FT_, in which the yield curve of a Government bond can be turned into music.
 
 While it remains to be seen whether this form of content is a gimmick or here to stay, I'd imagine we're going to see more abstract data visualisation forms over the coming years.
 
@@ -81,7 +81,7 @@ Another of the trends pointed out by Kirk is that chart titles are becoming incr
 
 I've tried to follow John's lead recently, moving away from chart titles like [this](https://twitter.com/Worville/status/1163337260768493568?s=20) to something more like [this](https://twitter.com/Worville/status/1164722542285873152?s=20). The benefits of this approach are obvious – people want to be told a story, and not look at dry graphics with dull titles. Maybe this is down to social media forcing us to increasingly compress work into the most succinct and slim form possible, or because people such as John have a large following because they do this so well.
 
-Finally, "participation viz" is up. Take this example from FiveThirtyEight about the [2018 midterm election forecasts in the United States](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/). "Participation viz" essentially being any visualisation that takes input from the user to change the content and how it's consumed.
+Finally, "participation viz" is up. Take this example from _FiveThirtyEight_ about the [2018 midterm election forecasts in the United States](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/). "Participation viz" essentially being any visualisation that takes input from the user to change the content and how it's consumed.
 
 <p align="center">
 <img src="/assets/fivethirtyeight_participation.png" width="80%">
